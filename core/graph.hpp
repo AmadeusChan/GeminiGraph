@@ -23,7 +23,7 @@ Copyright (c) 2015-2016 Xiaowei Zhu, Tsinghua University
 #include <unistd.h>
 #include <fcntl.h>
 #include <malloc.h>
-#include <sys/mman.h>
+#include <mman.h>
 #include <numa.h>
 #include <omp.h>
 
@@ -69,6 +69,7 @@ struct MessageBuffer {
   void init (int socket_id) {
     capacity = 4096;
     count = 0;
+    // memory allocation to some specified socket
     data = (char*)numa_alloc_onnode(capacity, socket_id);
   }
   void resize(size_t new_capacity) {

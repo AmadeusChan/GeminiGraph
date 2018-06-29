@@ -50,6 +50,7 @@ void compute(Graph<Empty> * graph, VertexId root) {
         VertexId activated = 0;
         for (AdjUnit<Empty> * ptr=outgoing_adj.begin;ptr!=outgoing_adj.end;ptr++) {
           VertexId dst = ptr->neighbour;
+	  // why not directly use if (cas(***))
           if (parent[dst]==graph->vertices && cas(&parent[dst], graph->vertices, src)) {
             active_out->set_bit(dst);
             activated += 1;
@@ -121,6 +122,7 @@ int main(int argc, char ** argv) {
   VertexId root = std::atoi(argv[3]);
   graph->load_directed(argv[1], std::atoi(argv[2]));
 
+  // ??? why 5 runs? average
   compute(graph, root);
   for (int run=0;run<5;run++) {
     compute(graph, root);

@@ -1,5 +1,5 @@
 ROOT_DIR= $(shell pwd)
-TARGETS= toolkits/bc toolkits/bfs toolkits/cc toolkits/pagerank toolkits/sssp
+TARGETS= toolkits/bc toolkits/bfs toolkits/cc toolkits/pagerank toolkits/sssp toolkits/trim2
 MACROS= 
 # MACROS= -D PRINT_DEBUG_MESSAGES
 
@@ -16,3 +16,5 @@ toolkits/%: toolkits/%.cpp $(HEADERS)
 clean: 
 	rm -f $(TARGETS)
 
+run: toolkits/trim2
+	./toolkits/trim2 ../make_biedgelist/simple_graph.biedgelist 100

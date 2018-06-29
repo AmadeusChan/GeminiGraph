@@ -3,14 +3,15 @@
 
 #include "core/graph.hpp"
 
-void compute(Graph<empty> * graph) {
+void compute(Graph<Empty> * graph) {
 	double exec_time = 0;
 	exec_time -= get_time();
 
-	VertexId * degree = graph->alloc_vertex_array<VertexId>();
+	//VertexId * degree = graph->alloc_vertex_array<VertexId>();
+  	VertexId * degree = graph->alloc_vertex_array<VertexId>();
 	VertexSubset * active = graph->alloc_vertex_subset();
 	active->fill();
-	graph->fill_vertex_array(degree, 0);
+	graph->fill_vertex_array(degree, (VertexId) 0);
 
 	graph->process_edges<VertexId, VertexId> (
 			[&](VertexId src) {
@@ -22,7 +23,7 @@ void compute(Graph<empty> * graph) {
 				for (AdjUnit<Empty> * ptr = outgoing_adj.begin; ptr != outgoing_adj.end; ptr ++) {
           				VertexId dst = ptr->neighbour;
 					if (degree[dst] < 2) {
-						write_add(&degree[dst], 1);
+						write_add(&degree[dst], (VertexId)1);
 					}
 				}
 				return 0;
@@ -36,6 +37,7 @@ void compute(Graph<empty> * graph) {
 						break;
 					}
 				}
+				//printf("%d\n", count);
 				graph->emit(dst, count);
 			},
 
@@ -59,7 +61,7 @@ void compute(Graph<empty> * graph) {
 	graph->gather_vertex_array(degree, 0);
 	if (graph->partition_id == 0) {
 		VertexId valid_vertex = 0;
-		for (VertexId v_i = 0; v_i < graph->vertex; v_i ++) {
+		for (VertexId v_i = 0; v_i < graph->vertices; v_i ++) {
 			if (degree[v_i] >= 2) {
 				valid_vertex += 1;
 			}
@@ -67,7 +69,7 @@ void compute(Graph<empty> * graph) {
 		printf("number of vertices with no less than 2 neighbours = %u\n", valid_vertex);
 	}
 
-	grapj->dealloc_vertex_array(degree);
+	graph->dealloc_vertex_array(degree);
 	delete active;
 }
 
@@ -84,9 +86,11 @@ int main(int argc, char **argv) {
 	graph->load_directed(argv[1], std::atoi(argv[2]));
 
 	compute(graph);
+	/*
 	for (int run = 0; run < 5; ++ run) {
 		compute(graph);
 	}
+	*/
 
 	delete graph;
 

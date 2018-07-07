@@ -120,10 +120,13 @@ int main(int argc, char ** argv) {
   Graph<Empty> * graph;
   graph = new Graph<Empty>();
   VertexId root = std::atoi(argv[3]);
+  //printf("point A\n");
   graph->load_directed(argv[1], std::atoi(argv[2]));
+  //printf("point B\n");
 
   // ??? why 5 runs? average
   compute(graph, root);
+  //printf("point C\n");
   for (int run=0;run<5;run++) {
     compute(graph, root);
   }

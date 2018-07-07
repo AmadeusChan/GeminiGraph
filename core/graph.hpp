@@ -329,6 +329,7 @@ public:
   }
 
   int get_partition_id(VertexId v_i){
+    //printf("%d\n", v_i);
     for (int i=0;i<partitions;i++) {
       if (v_i >= partition_offset[i] && v_i < partition_offset[i+1]) {
         return i;

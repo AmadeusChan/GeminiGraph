@@ -1,239 +1,178 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
-!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
-!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
-!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	0.0.0	/c04ceb8/
-ATOMIC_HPP	core/atomic.hpp	/^#define ATOMIC_HPP$/;"	d
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ATOMIC_HPP	core/atomic.hpp	18;"	d
 AdjUnit	core/type.hpp	/^struct AdjUnit <Empty> {$/;"	s
 AdjUnit	core/type.hpp	/^struct AdjUnit {$/;"	s
-BITMAP_HPP	core/bitmap.hpp	/^#define BITMAP_HPP$/;"	d
-BIT_OFFSET	core/bitmap.hpp	/^#define BIT_OFFSET(/;"	d
+BITMAP_HPP	core/bitmap.hpp	18;"	d
+BIT_OFFSET	core/bitmap.hpp	21;"	d
 Bitmap	core/bitmap.hpp	/^  Bitmap() : size(0), data(NULL) { }$/;"	f	class:Bitmap
 Bitmap	core/bitmap.hpp	/^  Bitmap(size_t size) : size(size) {$/;"	f	class:Bitmap
 Bitmap	core/bitmap.hpp	/^class Bitmap {$/;"	c
-CHUNKSIZE	core/constants.hpp	/^#define CHUNKSIZE /;"	d
-COMPACT	toolkits/bc.cpp	/^#define COMPACT /;"	d	file:
-CONSTANTS_HPP	core/constants.hpp	/^#define CONSTANTS_HPP$/;"	d
+CHUNKSIZE	core/constants.hpp	20;"	d
+COMPACT	toolkits/bc.cpp	22;"	d	file:
+CONSTANTS_HPP	core/constants.hpp	18;"	d
 CXXFLAGS	Makefile	/^CXXFLAGS= -O3 -Wall -std=c++11 -g -fopenmp -march=native -I$(ROOT_DIR) $(MACROS)$/;"	m
 CompressedAdjIndexUnit	core/type.hpp	/^struct CompressedAdjIndexUnit {$/;"	s
-EdgeId	core/type.hpp	/^typedef uint64_t EdgeId;$/;"	t	typeref:typename:uint64_t
+EdgeId	core/type.hpp	/^typedef uint64_t EdgeId;$/;"	t
 EdgeUnit	core/type.hpp	/^struct EdgeUnit <Empty> {$/;"	s
 EdgeUnit	core/type.hpp	/^struct EdgeUnit {$/;"	s
 Empty	core/type.hpp	/^struct Empty { };$/;"	s
-FILESYSTEM_HPP	core/filesystem.hpp	/^#define FILESYSTEM_HPP$/;"	d
-GRAPH_HPP	core/graph.hpp	/^#define GRAPH_HPP$/;"	d
+FILESYSTEM_HPP	core/filesystem.hpp	18;"	d
+GRAPH_HPP	core/graph.hpp	18;"	d
 GatherVertexArray	core/graph.hpp	/^  GatherVertexArray$/;"	e	enum:MessageTag
 Graph	core/graph.hpp	/^  Graph() {$/;"	f	class:Graph
 Graph	core/graph.hpp	/^class Graph {$/;"	c
 HEADERS	Makefile	/^HEADERS= $(shell find . -name '*.hpp')$/;"	m
 MACROS	Makefile	/^MACROS= $/;"	m
 MPICXX	Makefile	/^MPICXX= mpicxx$/;"	m
-MPI_HPP	core/mpi.hpp	/^#define MPI_HPP$/;"	d
+MPI_HPP	core/mpi.hpp	18;"	d
 MPI_Instance	core/mpi.hpp	/^  MPI_Instance(int * argc, char *** argv) {$/;"	f	class:MPI_Instance
 MPI_Instance	core/mpi.hpp	/^class MPI_Instance {$/;"	c
 MessageBuffer	core/graph.hpp	/^  MessageBuffer () {$/;"	f	struct:MessageBuffer
 MessageBuffer	core/graph.hpp	/^struct MessageBuffer {$/;"	s
 MessageTag	core/graph.hpp	/^enum MessageTag {$/;"	g
 MsgUnit	core/graph.hpp	/^struct MsgUnit {$/;"	s
-PAGESIZE	core/constants.hpp	/^#define PAGESIZE /;"	d
+N	trim2.py	/^    N = int(f.readline())$/;"	v
+PAGESIZE	core/constants.hpp	21;"	d
 PassMessage	core/graph.hpp	/^  PassMessage,$/;"	e	enum:MessageTag
 ROOT_DIR	Makefile	/^ROOT_DIR= $(shell pwd)$/;"	m
 STEALING	core/graph.hpp	/^  STEALING$/;"	e	enum:ThreadStatus
 SYSLIBS	Makefile	/^SYSLIBS= -lnuma$/;"	m
 ShuffleGraph	core/graph.hpp	/^  ShuffleGraph,$/;"	e	enum:MessageTag
-TARGETS	Makefile	/^TARGETS= toolkits\/bc toolkits\/bfs toolkits\/cc toolkits\/pagerank toolkits\/sssp$/;"	m
-TIME_HPP	core/time.hpp	/^#define TIME_HPP$/;"	d
-TYPE_HPP	core/type.hpp	/^#define TYPE_HPP$/;"	d
+TARGETS	Makefile	/^TARGETS= toolkits\/bc toolkits\/bfs toolkits\/cc toolkits\/pagerank toolkits\/sssp toolkits\/trim2$/;"	m
+TIME_HPP	core/time.hpp	18;"	d
+TYPE_HPP	core/type.hpp	18;"	d
 ThreadState	core/graph.hpp	/^struct ThreadState {$/;"	s
 ThreadStatus	core/graph.hpp	/^enum ThreadStatus {$/;"	g
 VertexAdjList	core/type.hpp	/^  VertexAdjList() : begin(nullptr), end(nullptr) { }$/;"	f	struct:VertexAdjList
 VertexAdjList	core/type.hpp	/^  VertexAdjList(AdjUnit<EdgeData> * begin, AdjUnit<EdgeData> * end) : begin(begin), end(end) { }$/;"	f	struct:VertexAdjList
 VertexAdjList	core/type.hpp	/^struct VertexAdjList {$/;"	s
-VertexId	core/type.hpp	/^typedef uint32_t VertexId;$/;"	t	typeref:typename:uint32_t
-VertexSubset	core/bitmap.hpp	/^typedef Bitmap VertexSubset;$/;"	t	typeref:typename:Bitmap
-WORD_OFFSET	core/bitmap.hpp	/^#define WORD_OFFSET(/;"	d
+VertexId	core/type.hpp	/^typedef uint32_t VertexId;$/;"	t
+VertexSubset	core/bitmap.hpp	/^typedef Bitmap VertexSubset;$/;"	t
+WORD_OFFSET	core/bitmap.hpp	20;"	d
 WORKING	core/graph.hpp	/^  WORKING,$/;"	e	enum:ThreadStatus
-Weight	toolkits/sssp.cpp	/^typedef float Weight;$/;"	t	typeref:typename:float	file:
-__anon3329d875010a	core/type.hpp	/^  union {$/;"	u	struct:EdgeUnit
-__anon3329d875020a	core/type.hpp	/^  union {$/;"	u	struct:AdjUnit
-__anon3e4355870102	toolkits/pagerank.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute	file:
-__anon3e4355870202	toolkits/pagerank.cpp	/^      [&](VertexId src){$/;"	f	function:compute	file:
-__anon3e4355870302	toolkits/pagerank.cpp	/^      [&](VertexId src, double msg, VertexAdjList<Empty> outgoing_adj){$/;"	f	function:compute	file:
-__anon3e4355870402	toolkits/pagerank.cpp	/^      [&](VertexId dst, VertexAdjList<Empty> incoming_adj) {$/;"	f	function:compute	file:
-__anon3e4355870502	toolkits/pagerank.cpp	/^      [&](VertexId dst, double msg) {$/;"	f	function:compute	file:
-__anon3e4355870602	toolkits/pagerank.cpp	/^        [&](VertexId vtx) {$/;"	f	function:compute	file:
-__anon3e4355870702	toolkits/pagerank.cpp	/^        [&](VertexId vtx) {$/;"	f	function:compute	file:
-__anon3e4355870802	toolkits/pagerank.cpp	/^    [&](VertexId vtx) {$/;"	f	function:compute	file:
-__anon5e449b390102	toolkits/bfs.cpp	/^      [&](VertexId src){$/;"	f	function:compute	file:
-__anon5e449b390202	toolkits/bfs.cpp	/^      [&](VertexId src, VertexId msg, VertexAdjList<Empty> outgoing_adj){$/;"	f	function:compute	file:
-__anon5e449b390302	toolkits/bfs.cpp	/^      [&](VertexId dst, VertexAdjList<Empty> incoming_adj) {$/;"	f	function:compute	file:
-__anon5e449b390402	toolkits/bfs.cpp	/^      [&](VertexId dst, VertexId msg) {$/;"	f	function:compute	file:
-__anon5e449b390502	toolkits/bfs.cpp	/^      [&](VertexId vtx) {$/;"	f	function:compute	file:
-__anonb4eca9230102	toolkits/bc.cpp	/^      [&](VertexId src){$/;"	f	function:compute	file:
-__anonb4eca9230202	toolkits/bc.cpp	/^      [&](VertexId src, double msg, VertexAdjList<Empty> outgoing_adj){$/;"	f	function:compute	file:
-__anonb4eca9230302	toolkits/bc.cpp	/^      [&](VertexId dst, VertexAdjList<Empty> incoming_adj) {$/;"	f	function:compute	file:
-__anonb4eca9230402	toolkits/bc.cpp	/^      [&](VertexId dst, double msg) {$/;"	f	function:compute	file:
-__anonb4eca9230502	toolkits/bc.cpp	/^      [&](VertexId vtx) {$/;"	f	function:compute	file:
-__anonb4eca9230602	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute	file:
-__anonb4eca9230702	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute	file:
-__anonb4eca9230802	toolkits/bc.cpp	/^      [&](VertexId src){$/;"	f	function:compute	file:
-__anonb4eca9230902	toolkits/bc.cpp	/^      [&](VertexId src, double msg, VertexAdjList<Empty> outgoing_adj){$/;"	f	function:compute	file:
-__anonb4eca9230a02	toolkits/bc.cpp	/^      [&](VertexId dst, VertexAdjList<Empty> incoming_adj) {$/;"	f	function:compute	file:
-__anonb4eca9230b02	toolkits/bc.cpp	/^      [&](VertexId dst, double msg) {$/;"	f	function:compute	file:
-__anonb4eca9230c02	toolkits/bc.cpp	/^      [&](VertexId vtx){$/;"	f	function:compute	file:
-__anonb4eca9230d02	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute	file:
-__anonb4eca9230e02	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute_compact	file:
-__anonb4eca9230f02	toolkits/bc.cpp	/^      [&](VertexId src){$/;"	f	function:compute_compact	file:
-__anonb4eca9231002	toolkits/bc.cpp	/^      [&](VertexId src, double msg, VertexAdjList<Empty> outgoing_adj){$/;"	f	function:compute_compact	file:
-__anonb4eca9231102	toolkits/bc.cpp	/^      [&](VertexId dst, VertexAdjList<Empty> incoming_adj) {$/;"	f	function:compute_compact	file:
-__anonb4eca9231202	toolkits/bc.cpp	/^      [&](VertexId dst, double msg) {$/;"	f	function:compute_compact	file:
-__anonb4eca9231302	toolkits/bc.cpp	/^      [&](VertexId vtx) {$/;"	f	function:compute_compact	file:
-__anonb4eca9231402	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute_compact	file:
-__anonb4eca9231502	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute_compact	file:
-__anonb4eca9231602	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute_compact	file:
-__anonb4eca9231702	toolkits/bc.cpp	/^      [&](VertexId src){$/;"	f	function:compute_compact	file:
-__anonb4eca9231802	toolkits/bc.cpp	/^      [&](VertexId src, double msg, VertexAdjList<Empty> outgoing_adj){$/;"	f	function:compute_compact	file:
-__anonb4eca9231902	toolkits/bc.cpp	/^      [&](VertexId dst, VertexAdjList<Empty> incoming_adj) {$/;"	f	function:compute_compact	file:
-__anonb4eca9231a02	toolkits/bc.cpp	/^      [&](VertexId dst, double msg) {$/;"	f	function:compute_compact	file:
-__anonb4eca9231b02	toolkits/bc.cpp	/^      [&](VertexId vtx){$/;"	f	function:compute_compact	file:
-__anonb4eca9231c02	toolkits/bc.cpp	/^      [&](VertexId vtx){$/;"	f	function:compute_compact	file:
-__anonb4eca9231d02	toolkits/bc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute_compact	file:
-__anonb741d1c40102	toolkits/cc.cpp	/^    [&](VertexId vtx){$/;"	f	function:compute	file:
-__anonb741d1c40202	toolkits/cc.cpp	/^      [&](VertexId src){$/;"	f	function:compute	file:
-__anonb741d1c40302	toolkits/cc.cpp	/^      [&](VertexId src, VertexId msg, VertexAdjList<Empty> outgoing_adj){$/;"	f	function:compute	file:
-__anonb741d1c40402	toolkits/cc.cpp	/^      [&](VertexId dst, VertexAdjList<Empty> incoming_adj) {$/;"	f	function:compute	file:
-__anonb741d1c40502	toolkits/cc.cpp	/^      [&](VertexId dst, VertexId msg) {$/;"	f	function:compute	file:
-__anonc47945670102	toolkits/sssp.cpp	/^      [&](VertexId src){$/;"	f	function:compute	file:
-__anonc47945670202	toolkits/sssp.cpp	/^      [&](VertexId src, Weight msg, VertexAdjList<Weight> outgoing_adj){$/;"	f	function:compute	file:
-__anonc47945670302	toolkits/sssp.cpp	/^      [&](VertexId dst, VertexAdjList<Weight> incoming_adj) {$/;"	f	function:compute	file:
-__anonc47945670402	toolkits/sssp.cpp	/^      [&](VertexId dst, Weight msg) {$/;"	f	function:compute	file:
-__anond33f25250102	core/graph.hpp	/^      std::thread recv_thread_dst([&](){$/;"	f	function:Graph::load_undirected_from_directed	file:
-__anond33f25250202	core/graph.hpp	/^      std::thread recv_thread_dst([&](){$/;"	f	function:Graph::load_undirected_from_directed	file:
-__anond33f25250302	core/graph.hpp	/^      std::thread recv_thread_dst([&](){$/;"	f	function:Graph::load_directed	file:
-__anond33f25250402	core/graph.hpp	/^      std::thread recv_thread_dst([&](){$/;"	f	function:Graph::load_directed	file:
-__anond33f25250502	core/graph.hpp	/^      std::thread recv_thread_src([&](){$/;"	f	function:Graph::load_directed	file:
-__anond33f25250602	core/graph.hpp	/^      std::thread recv_thread_src([&](){$/;"	f	function:Graph::load_directed	file:
-__anond33f25250702	core/graph.hpp	/^      [&](VertexId vtx){$/;"	f	function:Graph::process_edges	file:
-__anond33f25250802	core/graph.hpp	/^      std::thread send_thread([&](){$/;"	f	function:Graph::process_edges	file:
-__anond33f25250902	core/graph.hpp	/^      std::thread recv_thread([&](){$/;"	f	function:Graph::process_edges	file:
-__anond33f25250a02	core/graph.hpp	/^        std::thread send_thread([&](){$/;"	f	function:Graph::process_edges	file:
-__anond33f25250b02	core/graph.hpp	/^        std::thread recv_thread([&](){$/;"	f	function:Graph::process_edges	file:
-__anond33f25250c02	core/graph.hpp	/^      std::thread send_thread([&](){$/;"	f	function:Graph::process_edges	file:
-__anond33f25250d02	core/graph.hpp	/^      std::thread recv_thread([&](){$/;"	f	function:Graph::process_edges	file:
-__anond33f25250e02	core/graph.hpp	/^          threads.emplace_back([&](int i){$/;"	f	function:Graph::process_edges::__anond33f25250d02	file:
-all	Makefile	/^all: $(TARGETS)$/;"	t
-alloc_interleaved_vertex_array	core/graph.hpp	/^  T * alloc_interleaved_vertex_array() {$/;"	f	class:Graph	typeref:typename:T *
-alloc_vertex_array	core/graph.hpp	/^  T * alloc_vertex_array() {$/;"	f	class:Graph	typeref:typename:T *
-alloc_vertex_subset	core/graph.hpp	/^  VertexSubset * alloc_vertex_subset() {$/;"	f	class:Graph	typeref:typename:VertexSubset *
-alpha	core/graph.hpp	/^  size_t alpha;$/;"	m	class:Graph	typeref:typename:size_t
-begin	core/type.hpp	/^  AdjUnit<EdgeData> * begin;$/;"	m	struct:VertexAdjList	typeref:typename:AdjUnit<EdgeData> *
-capacity	core/graph.hpp	/^  size_t capacity;$/;"	m	struct:MessageBuffer	typeref:typename:size_t
-cas	core/atomic.hpp	/^inline bool cas(T * ptr, T old_val, T new_val) {$/;"	f	typeref:typename:bool
-clean	Makefile	/^clean: $/;"	t
-clear	core/bitmap.hpp	/^  void clear() {$/;"	f	class:Bitmap	typeref:typename:void
-compressed_incoming_adj_index	core/graph.hpp	/^  CompressedAdjIndexUnit ** compressed_incoming_adj_index; \/\/ CompressedAdjIndexUnit [sockets]/;"	m	class:Graph	typeref:typename:CompressedAdjIndexUnit **
-compressed_incoming_adj_vertices	core/graph.hpp	/^  VertexId * compressed_incoming_adj_vertices;$/;"	m	class:Graph	typeref:typename:VertexId *
-compressed_outgoing_adj_index	core/graph.hpp	/^  CompressedAdjIndexUnit ** compressed_outgoing_adj_index; \/\/ CompressedAdjIndexUnit [sockets]/;"	m	class:Graph	typeref:typename:CompressedAdjIndexUnit **
-compressed_outgoing_adj_vertices	core/graph.hpp	/^  VertexId * compressed_outgoing_adj_vertices;$/;"	m	class:Graph	typeref:typename:VertexId *
-compute	toolkits/bc.cpp	/^void compute(Graph<Empty> * graph, VertexId root) {$/;"	f	typeref:typename:void
-compute	toolkits/bfs.cpp	/^void compute(Graph<Empty> * graph, VertexId root) {$/;"	f	typeref:typename:void
-compute	toolkits/cc.cpp	/^void compute(Graph<Empty> * graph) {$/;"	f	typeref:typename:void
-compute	toolkits/pagerank.cpp	/^void compute(Graph<Empty> * graph, int iterations) {$/;"	f	typeref:typename:void
-compute	toolkits/sssp.cpp	/^void compute(Graph<Weight> * graph, VertexId root) {$/;"	f	typeref:typename:void
-compute_compact	toolkits/bc.cpp	/^void compute_compact(Graph<Empty> * graph, VertexId root) {$/;"	f	typeref:typename:void
-count	core/graph.hpp	/^  int count; \/\/ the actual size (i.e. bytes) should be sizeof(element) * count$/;"	m	struct:MessageBuffer	typeref:typename:int
-curr	core/graph.hpp	/^  VertexId curr;$/;"	m	struct:ThreadState	typeref:typename:VertexId
-current_send_part_id	core/graph.hpp	/^  int current_send_part_id;$/;"	m	class:Graph	typeref:typename:int
-d	toolkits/pagerank.cpp	/^const double d = (double)0.85;$/;"	v	typeref:typename:const double
-data	core/bitmap.hpp	/^  unsigned long * data;$/;"	m	class:Bitmap	typeref:typename:unsigned long *
-data	core/graph.hpp	/^  char * data;$/;"	m	struct:MessageBuffer	typeref:typename:char *
-dealloc_vertex_array	core/graph.hpp	/^  T * dealloc_vertex_array(T * array) {$/;"	f	class:Graph	typeref:typename:T *
-dst	core/type.hpp	/^    VertexId dst;$/;"	m	union:EdgeUnit::__anon3329d875010a	typeref:typename:VertexId
-dst	core/type.hpp	/^  VertexId dst;$/;"	m	struct:EdgeUnit	typeref:typename:VertexId
-dump_vertex_array	core/graph.hpp	/^  void dump_vertex_array(T * array, std::string path) {$/;"	f	class:Graph	typeref:typename:void
-edge_data	core/type.hpp	/^    Empty edge_data;$/;"	m	union:AdjUnit::__anon3329d875020a	typeref:typename:Empty
-edge_data	core/type.hpp	/^    Empty edge_data;$/;"	m	union:EdgeUnit::__anon3329d875010a	typeref:typename:Empty
-edge_data	core/type.hpp	/^  EdgeData edge_data;$/;"	m	struct:AdjUnit	typeref:typename:EdgeData
-edge_data	core/type.hpp	/^  EdgeData edge_data;$/;"	m	struct:EdgeUnit	typeref:typename:EdgeData
-edge_data_size	core/graph.hpp	/^  size_t edge_data_size;$/;"	m	class:Graph	typeref:typename:size_t
-edge_unit_size	core/graph.hpp	/^  size_t edge_unit_size;$/;"	m	class:Graph	typeref:typename:size_t
-edges	core/graph.hpp	/^  EdgeId edges;$/;"	m	class:Graph	typeref:typename:EdgeId
-emit	core/graph.hpp	/^  void emit(VertexId vtx, M msg) {$/;"	f	class:Graph	typeref:typename:void
-end	core/graph.hpp	/^  VertexId end;$/;"	m	struct:ThreadState	typeref:typename:VertexId
-end	core/type.hpp	/^  AdjUnit<EdgeData> * end;$/;"	m	struct:VertexAdjList	typeref:typename:AdjUnit<EdgeData> *
-file_exists	core/filesystem.hpp	/^inline bool file_exists(std::string filename) {$/;"	f	typeref:typename:bool
-file_size	core/filesystem.hpp	/^inline long file_size(std::string filename) {$/;"	f	typeref:typename:long
-fill	core/bitmap.hpp	/^  void fill() {$/;"	f	class:Bitmap	typeref:typename:void
-fill_vertex_array	core/graph.hpp	/^  void fill_vertex_array(T * array, T value) {$/;"	f	class:Graph	typeref:typename:void
-flush_local_send_buffer	core/graph.hpp	/^  void flush_local_send_buffer(int t_i) {$/;"	f	class:Graph	typeref:typename:void
-gather_vertex_array	core/graph.hpp	/^  void gather_vertex_array(T * array, int root) {$/;"	f	class:Graph	typeref:typename:void
-get_bit	core/bitmap.hpp	/^  unsigned long get_bit(size_t i) {$/;"	f	class:Bitmap	typeref:typename:unsigned long
-get_local_partition_id	core/graph.hpp	/^  int get_local_partition_id(VertexId v_i){$/;"	f	class:Graph	typeref:typename:int
-get_mpi_data_type	core/mpi.hpp	/^MPI_Datatype get_mpi_data_type() {$/;"	f	typeref:typename:MPI_Datatype
-get_partition_id	core/graph.hpp	/^  int get_partition_id(VertexId v_i){$/;"	f	class:Graph	typeref:typename:int
-get_socket_id	core/graph.hpp	/^  inline int get_socket_id(int thread_id) {$/;"	f	class:Graph	typeref:typename:int
-get_socket_offset	core/graph.hpp	/^  inline int get_socket_offset(int thread_id) {$/;"	f	class:Graph	typeref:typename:int
-get_time	core/time.hpp	/^inline double get_time() {$/;"	f	typeref:typename:double
-in_degree	core/graph.hpp	/^  VertexId * in_degree; \/\/ VertexId [vertices]; numa-aware$/;"	m	class:Graph	typeref:typename:VertexId *
-incoming_adj_bitmap	core/graph.hpp	/^  Bitmap ** incoming_adj_bitmap;$/;"	m	class:Graph	typeref:typename:Bitmap **
-incoming_adj_index	core/graph.hpp	/^  EdgeId ** incoming_adj_index; \/\/ EdgeId [sockets] [vertices+1]; numa-aware$/;"	m	class:Graph	typeref:typename:EdgeId **
-incoming_adj_list	core/graph.hpp	/^  AdjUnit<EdgeData> ** incoming_adj_list; \/\/ AdjUnit<EdgeData> [sockets] [vertices+1]; numa-aw/;"	m	class:Graph	typeref:typename:AdjUnit<EdgeData> **
-incoming_edges	core/graph.hpp	/^  EdgeId * incoming_edges; \/\/ EdgeId [sockets]$/;"	m	class:Graph	typeref:typename:EdgeId *
-index	core/type.hpp	/^  EdgeId index;$/;"	m	struct:CompressedAdjIndexUnit	typeref:typename:EdgeId
-init	core/graph.hpp	/^  void init (int socket_id) {$/;"	f	struct:MessageBuffer	typeref:typename:void
-init	core/graph.hpp	/^  void init() {$/;"	f	class:Graph	typeref:typename:void
-load_directed	core/graph.hpp	/^  void load_directed(std::string path, VertexId vertices) {$/;"	f	class:Graph	typeref:typename:void
-load_undirected_from_directed	core/graph.hpp	/^  void load_undirected_from_directed(std::string path, VertexId vertices) {$/;"	f	class:Graph	typeref:typename:void
-local_partition_offset	core/graph.hpp	/^  VertexId * local_partition_offset; \/\/ VertexId [sockets+1]$/;"	m	class:Graph	typeref:typename:VertexId *
-local_send_buffer	core/graph.hpp	/^  MessageBuffer ** local_send_buffer; \/\/ MessageBuffer* [threads]; numa-aware$/;"	m	class:Graph	typeref:typename:MessageBuffer **
-local_send_buffer_limit	core/graph.hpp	/^  size_t local_send_buffer_limit;$/;"	m	class:Graph	typeref:typename:size_t
-main	toolkits/bc.cpp	/^int main(int argc, char ** argv) {$/;"	f	typeref:typename:int
-main	toolkits/bfs.cpp	/^int main(int argc, char ** argv) {$/;"	f	typeref:typename:int
-main	toolkits/cc.cpp	/^int main(int argc, char ** argv) {$/;"	f	typeref:typename:int
-main	toolkits/pagerank.cpp	/^int main(int argc, char ** argv) {$/;"	f	typeref:typename:int
-main	toolkits/sssp.cpp	/^int main(int argc, char ** argv) {$/;"	f	typeref:typename:int
-msg_data	core/graph.hpp	/^  MsgData msg_data;$/;"	m	struct:MsgUnit	typeref:typename:MsgData
-neighbour	core/type.hpp	/^    VertexId neighbour;$/;"	m	union:AdjUnit::__anon3329d875020a	typeref:typename:VertexId
-neighbour	core/type.hpp	/^  VertexId neighbour;$/;"	m	struct:AdjUnit	typeref:typename:VertexId
-out_degree	core/graph.hpp	/^  VertexId * out_degree; \/\/ VertexId [vertices]; numa-aware$/;"	m	class:Graph	typeref:typename:VertexId *
-outgoing_adj_bitmap	core/graph.hpp	/^  Bitmap ** outgoing_adj_bitmap;$/;"	m	class:Graph	typeref:typename:Bitmap **
-outgoing_adj_index	core/graph.hpp	/^  EdgeId ** outgoing_adj_index; \/\/ EdgeId [sockets] [vertices+1]; numa-aware$/;"	m	class:Graph	typeref:typename:EdgeId **
-outgoing_adj_list	core/graph.hpp	/^  AdjUnit<EdgeData> ** outgoing_adj_list; \/\/ AdjUnit<EdgeData> [sockets] [vertices+1]; numa-aw/;"	m	class:Graph	typeref:typename:AdjUnit<EdgeData> **
-outgoing_edges	core/graph.hpp	/^  EdgeId * outgoing_edges; \/\/ EdgeId [sockets]$/;"	m	class:Graph	typeref:typename:EdgeId *
-owned_vertices	core/graph.hpp	/^  VertexId owned_vertices;$/;"	m	class:Graph	typeref:typename:VertexId
-partition_id	core/graph.hpp	/^  int partition_id;$/;"	m	class:Graph	typeref:typename:int
-partition_id	core/mpi.hpp	/^  int partition_id;$/;"	m	class:MPI_Instance	typeref:typename:int
-partition_offset	core/graph.hpp	/^  VertexId * partition_offset; \/\/ VertexId [partitions+1]$/;"	m	class:Graph	typeref:typename:VertexId *
-partitions	core/graph.hpp	/^  int partitions;$/;"	m	class:Graph	typeref:typename:int
-partitions	core/mpi.hpp	/^  int partitions;$/;"	m	class:MPI_Instance	typeref:typename:int
-pause	core/mpi.hpp	/^  void pause() {$/;"	f	class:MPI_Instance	typeref:typename:void
-process_edges	core/graph.hpp	/^  R process_edges(std::function<void(VertexId)> sparse_signal, std::function<R(VertexId, M, Vert/;"	f	class:Graph	typeref:typename:R
-process_vertices	core/graph.hpp	/^  R process_vertices(std::function<R(VertexId)> process, Bitmap * active) {$/;"	f	class:Graph	typeref:typename:R
-recv_buffer	core/graph.hpp	/^  MessageBuffer *** recv_buffer; \/\/ MessageBuffer* [partitions] [sockets]; numa-aware$/;"	m	class:Graph	typeref:typename:MessageBuffer ***
-resize	core/graph.hpp	/^  void resize(size_t new_capacity) {$/;"	f	struct:MessageBuffer	typeref:typename:void
-restore_vertex_array	core/graph.hpp	/^  void restore_vertex_array(T * array, std::string path) {$/;"	f	class:Graph	typeref:typename:void
-send_buffer	core/graph.hpp	/^  MessageBuffer *** send_buffer; \/\/ MessageBuffer* [partitions] [sockets]; numa-aware$/;"	m	class:Graph	typeref:typename:MessageBuffer ***
-set_bit	core/bitmap.hpp	/^  void set_bit(size_t i) {$/;"	f	class:Bitmap	typeref:typename:void
-size	core/bitmap.hpp	/^  size_t size;$/;"	m	class:Bitmap	typeref:typename:size_t
-sockets	core/graph.hpp	/^  int sockets;$/;"	m	class:Graph	typeref:typename:int
-src	core/type.hpp	/^  VertexId src;$/;"	m	struct:EdgeUnit	typeref:typename:VertexId
-status	core/graph.hpp	/^  ThreadStatus status;$/;"	m	struct:ThreadState	typeref:typename:ThreadStatus
-symmetric	core/graph.hpp	/^  bool symmetric;$/;"	m	class:Graph	typeref:typename:bool
-thread_state	core/graph.hpp	/^  ThreadState ** thread_state; \/\/ ThreadState* [threads]; numa-aware$/;"	m	class:Graph	typeref:typename:ThreadState **
-threads	core/graph.hpp	/^  int threads;$/;"	m	class:Graph	typeref:typename:int
-threads_per_socket	core/graph.hpp	/^  int threads_per_socket;$/;"	m	class:Graph	typeref:typename:int
-toolkits/%	Makefile	/^toolkits\/%: toolkits\/%.cpp $(HEADERS)$/;"	t
-transpose	core/graph.hpp	/^  void transpose() {$/;"	f	class:Graph	typeref:typename:void
-tune_chunks	core/graph.hpp	/^  void tune_chunks() {$/;"	f	class:Graph	typeref:typename:void
-tuned_chunks_dense	core/graph.hpp	/^  ThreadState ** tuned_chunks_dense; \/\/ ThreadState [partitions][threads];$/;"	m	class:Graph	typeref:typename:ThreadState **
-tuned_chunks_sparse	core/graph.hpp	/^  ThreadState ** tuned_chunks_sparse; \/\/ ThreadState [partitions][threads];$/;"	m	class:Graph	typeref:typename:ThreadState **
-unit_size	core/graph.hpp	/^  size_t unit_size;$/;"	m	class:Graph	typeref:typename:size_t
-vertex	core/graph.hpp	/^  VertexId vertex;$/;"	m	struct:MsgUnit	typeref:typename:VertexId
-vertex	core/type.hpp	/^  VertexId vertex;$/;"	m	struct:CompressedAdjIndexUnit	typeref:typename:VertexId
-vertices	core/graph.hpp	/^  VertexId vertices;$/;"	m	class:Graph	typeref:typename:VertexId
-write_add	core/atomic.hpp	/^inline void write_add(T * ptr, T val) {$/;"	f	typeref:typename:void
-write_min	core/atomic.hpp	/^inline bool write_min(T * ptr, T val) {$/;"	f	typeref:typename:bool
+Weight	toolkits/sssp.cpp	/^typedef float Weight;$/;"	t	file:
+alloc_interleaved_vertex_array	core/graph.hpp	/^  T * alloc_interleaved_vertex_array() {$/;"	f	class:Graph
+alloc_vertex_array	core/graph.hpp	/^  T * alloc_vertex_array() {$/;"	f	class:Graph
+alloc_vertex_subset	core/graph.hpp	/^  VertexSubset * alloc_vertex_subset() {$/;"	f	class:Graph
+alpha	core/graph.hpp	/^  size_t alpha;$/;"	m	class:Graph
+begin	core/type.hpp	/^  AdjUnit<EdgeData> * begin;$/;"	m	struct:VertexAdjList
+capacity	core/graph.hpp	/^  size_t capacity;$/;"	m	struct:MessageBuffer
+cas	core/atomic.hpp	/^inline bool cas(T * ptr, T old_val, T new_val) {$/;"	f
+clear	core/bitmap.hpp	/^  void clear() {$/;"	f	class:Bitmap
+cnt	trim2.py	/^cnt = 0$/;"	v
+compressed_incoming_adj_index	core/graph.hpp	/^  CompressedAdjIndexUnit ** compressed_incoming_adj_index; \/\/ CompressedAdjIndexUnit [sockets] [...+1]; numa-aware$/;"	m	class:Graph
+compressed_incoming_adj_vertices	core/graph.hpp	/^  VertexId * compressed_incoming_adj_vertices;$/;"	m	class:Graph
+compressed_outgoing_adj_index	core/graph.hpp	/^  CompressedAdjIndexUnit ** compressed_outgoing_adj_index; \/\/ CompressedAdjIndexUnit [sockets] [...+1]; numa-aware$/;"	m	class:Graph
+compressed_outgoing_adj_vertices	core/graph.hpp	/^  VertexId * compressed_outgoing_adj_vertices;$/;"	m	class:Graph
+compute	toolkits/bc.cpp	/^void compute(Graph<Empty> * graph, VertexId root) {$/;"	f
+compute	toolkits/bfs.cpp	/^void compute(Graph<Empty> * graph, VertexId root) {$/;"	f
+compute	toolkits/cc.cpp	/^void compute(Graph<Empty> * graph) {$/;"	f
+compute	toolkits/pagerank.cpp	/^void compute(Graph<Empty> * graph, int iterations) {$/;"	f
+compute	toolkits/sssp.cpp	/^void compute(Graph<Weight> * graph, VertexId root) {$/;"	f
+compute	toolkits/trim2.cpp	/^void compute(Graph<Empty> * graph) {$/;"	f
+compute_compact	toolkits/bc.cpp	/^void compute_compact(Graph<Empty> * graph, VertexId root) {$/;"	f
+con	trim2.py	/^con = []$/;"	v
+count	core/graph.hpp	/^  int count; \/\/ the actual size (i.e. bytes) should be sizeof(element) * count$/;"	m	struct:MessageBuffer
+curr	core/graph.hpp	/^  VertexId curr;$/;"	m	struct:ThreadState
+current_send_part_id	core/graph.hpp	/^  int current_send_part_id;$/;"	m	class:Graph
+d	toolkits/pagerank.cpp	/^const double d = (double)0.85;$/;"	v
+data	core/bitmap.hpp	/^  unsigned long * data;$/;"	m	class:Bitmap
+data	core/graph.hpp	/^  char * data;$/;"	m	struct:MessageBuffer
+dealloc_vertex_array	core/graph.hpp	/^  T * dealloc_vertex_array(T * array) {$/;"	f	class:Graph
+degree	trim2.py	/^degree = []$/;"	v
+dst	core/type.hpp	/^    VertexId dst;$/;"	m	union:EdgeUnit::__anon1
+dst	core/type.hpp	/^  VertexId dst;$/;"	m	struct:EdgeUnit
+dump_vertex_array	core/graph.hpp	/^  void dump_vertex_array(T * array, std::string path) {$/;"	f	class:Graph
+edge_data	core/type.hpp	/^    Empty edge_data;$/;"	m	union:AdjUnit::__anon2
+edge_data	core/type.hpp	/^    Empty edge_data;$/;"	m	union:EdgeUnit::__anon1
+edge_data	core/type.hpp	/^  EdgeData edge_data;$/;"	m	struct:AdjUnit
+edge_data	core/type.hpp	/^  EdgeData edge_data;$/;"	m	struct:EdgeUnit
+edge_data_size	core/graph.hpp	/^  size_t edge_data_size;$/;"	m	class:Graph
+edge_unit_size	core/graph.hpp	/^  size_t edge_unit_size;$/;"	m	class:Graph
+edges	core/graph.hpp	/^  EdgeId edges;$/;"	m	class:Graph
+edges	trim2.py	/^    edges = []$/;"	v
+emit	core/graph.hpp	/^  void emit(VertexId vtx, M msg) {$/;"	f	class:Graph
+end	core/graph.hpp	/^  VertexId end;$/;"	m	struct:ThreadState
+end	core/type.hpp	/^  AdjUnit<EdgeData> * end;$/;"	m	struct:VertexAdjList
+file_exists	core/filesystem.hpp	/^inline bool file_exists(std::string filename) {$/;"	f
+file_size	core/filesystem.hpp	/^inline long file_size(std::string filename) {$/;"	f
+fill	core/bitmap.hpp	/^  void fill() {$/;"	f	class:Bitmap
+fill_vertex_array	core/graph.hpp	/^  void fill_vertex_array(T * array, T value) {$/;"	f	class:Graph
+flush_local_send_buffer	core/graph.hpp	/^  void flush_local_send_buffer(int t_i) {$/;"	f	class:Graph
+gather_vertex_array	core/graph.hpp	/^  void gather_vertex_array(T * array, int root) {$/;"	f	class:Graph
+get_bit	core/bitmap.hpp	/^  unsigned long get_bit(size_t i) {$/;"	f	class:Bitmap
+get_local_partition_id	core/graph.hpp	/^  int get_local_partition_id(VertexId v_i){$/;"	f	class:Graph
+get_mpi_data_type	core/mpi.hpp	/^MPI_Datatype get_mpi_data_type() {$/;"	f
+get_partition_id	core/graph.hpp	/^  int get_partition_id(VertexId v_i){$/;"	f	class:Graph
+get_socket_id	core/graph.hpp	/^  inline int get_socket_id(int thread_id) {$/;"	f	class:Graph
+get_socket_offset	core/graph.hpp	/^  inline int get_socket_offset(int thread_id) {$/;"	f	class:Graph
+get_time	core/time.hpp	/^inline double get_time() {$/;"	f
+in_degree	core/graph.hpp	/^  VertexId * in_degree; \/\/ VertexId [vertices]; numa-aware$/;"	m	class:Graph
+incoming_adj_bitmap	core/graph.hpp	/^  Bitmap ** incoming_adj_bitmap;$/;"	m	class:Graph
+incoming_adj_index	core/graph.hpp	/^  EdgeId ** incoming_adj_index; \/\/ EdgeId [sockets] [vertices+1]; numa-aware$/;"	m	class:Graph
+incoming_adj_list	core/graph.hpp	/^  AdjUnit<EdgeData> ** incoming_adj_list; \/\/ AdjUnit<EdgeData> [sockets] [vertices+1]; numa-aware$/;"	m	class:Graph
+incoming_edges	core/graph.hpp	/^  EdgeId * incoming_edges; \/\/ EdgeId [sockets]$/;"	m	class:Graph
+index	core/type.hpp	/^  EdgeId index;$/;"	m	struct:CompressedAdjIndexUnit
+init	core/graph.hpp	/^  void init (int socket_id) {$/;"	f	struct:MessageBuffer
+init	core/graph.hpp	/^  void init() {$/;"	f	class:Graph
+line	trim2.py	/^        line = f.readline().strip()$/;"	v
+line	trim2.py	/^        line = line.split(" ")$/;"	v
+load_directed	core/graph.hpp	/^  void load_directed(std::string path, VertexId vertices) {$/;"	f	class:Graph
+load_undirected_from_directed	core/graph.hpp	/^  void load_undirected_from_directed(std::string path, VertexId vertices) {$/;"	f	class:Graph
+local_partition_offset	core/graph.hpp	/^  VertexId * local_partition_offset; \/\/ VertexId [sockets+1]$/;"	m	class:Graph
+local_send_buffer	core/graph.hpp	/^  MessageBuffer ** local_send_buffer; \/\/ MessageBuffer* [threads]; numa-aware$/;"	m	class:Graph
+local_send_buffer_limit	core/graph.hpp	/^  size_t local_send_buffer_limit;$/;"	m	class:Graph
+main	toolkits/bc.cpp	/^int main(int argc, char ** argv) {$/;"	f
+main	toolkits/bfs.cpp	/^int main(int argc, char ** argv) {$/;"	f
+main	toolkits/cc.cpp	/^int main(int argc, char ** argv) {$/;"	f
+main	toolkits/pagerank.cpp	/^int main(int argc, char ** argv) {$/;"	f
+main	toolkits/sssp.cpp	/^int main(int argc, char ** argv) {$/;"	f
+main	toolkits/trim2.cpp	/^int main(int argc, char **argv) {$/;"	f
+msg_data	core/graph.hpp	/^  MsgData msg_data;$/;"	m	struct:MsgUnit
+neighbour	core/type.hpp	/^    VertexId neighbour;$/;"	m	union:AdjUnit::__anon2
+neighbour	core/type.hpp	/^  VertexId neighbour;$/;"	m	struct:AdjUnit
+os	trim2.py	/^import os$/;"	i
+out_degree	core/graph.hpp	/^  VertexId * out_degree; \/\/ VertexId [vertices]; numa-aware$/;"	m	class:Graph
+outgoing_adj_bitmap	core/graph.hpp	/^  Bitmap ** outgoing_adj_bitmap;$/;"	m	class:Graph
+outgoing_adj_index	core/graph.hpp	/^  EdgeId ** outgoing_adj_index; \/\/ EdgeId [sockets] [vertices+1]; numa-aware$/;"	m	class:Graph
+outgoing_adj_list	core/graph.hpp	/^  AdjUnit<EdgeData> ** outgoing_adj_list; \/\/ AdjUnit<EdgeData> [sockets] [vertices+1]; numa-aware$/;"	m	class:Graph
+outgoing_edges	core/graph.hpp	/^  EdgeId * outgoing_edges; \/\/ EdgeId [sockets]$/;"	m	class:Graph
+owned_vertices	core/graph.hpp	/^  VertexId owned_vertices;$/;"	m	class:Graph
+partition_id	core/graph.hpp	/^  int partition_id;$/;"	m	class:Graph
+partition_id	core/mpi.hpp	/^  int partition_id;$/;"	m	class:MPI_Instance
+partition_offset	core/graph.hpp	/^  VertexId * partition_offset; \/\/ VertexId [partitions+1]$/;"	m	class:Graph
+partitions	core/graph.hpp	/^  int partitions;$/;"	m	class:Graph
+partitions	core/mpi.hpp	/^  int partitions;$/;"	m	class:MPI_Instance
+pause	core/mpi.hpp	/^  void pause() {$/;"	f	class:MPI_Instance
+process_edges	core/graph.hpp	/^  R process_edges(std::function<void(VertexId)> sparse_signal, std::function<R(VertexId, M, VertexAdjList<EdgeData>)> sparse_slot, std::function<void(VertexId, VertexAdjList<EdgeData>)> dense_signal, std::function<R(VertexId, M)> dense_slot, Bitmap * active, Bitmap * dense_selective = nullptr) {$/;"	f	class:Graph
+process_vertices	core/graph.hpp	/^  R process_vertices(std::function<R(VertexId)> process, Bitmap * active) {$/;"	f	class:Graph
+recv_buffer	core/graph.hpp	/^  MessageBuffer *** recv_buffer; \/\/ MessageBuffer* [partitions] [sockets]; numa-aware$/;"	m	class:Graph
+resize	core/graph.hpp	/^  void resize(size_t new_capacity) {$/;"	f	struct:MessageBuffer
+restore_vertex_array	core/graph.hpp	/^  void restore_vertex_array(T * array, std::string path) {$/;"	f	class:Graph
+send_buffer	core/graph.hpp	/^  MessageBuffer *** send_buffer; \/\/ MessageBuffer* [partitions] [sockets]; numa-aware$/;"	m	class:Graph
+set_bit	core/bitmap.hpp	/^  void set_bit(size_t i) {$/;"	f	class:Bitmap
+size	core/bitmap.hpp	/^  size_t size;$/;"	m	class:Bitmap
+sockets	core/graph.hpp	/^  int sockets;$/;"	m	class:Graph
+src	core/type.hpp	/^  VertexId src;$/;"	m	struct:EdgeUnit
+status	core/graph.hpp	/^  ThreadStatus status;$/;"	m	struct:ThreadState
+symmetric	core/graph.hpp	/^  bool symmetric;$/;"	m	class:Graph
+thread_state	core/graph.hpp	/^  ThreadState ** thread_state; \/\/ ThreadState* [threads]; numa-aware$/;"	m	class:Graph
+threads	core/graph.hpp	/^  int threads;$/;"	m	class:Graph
+threads_per_socket	core/graph.hpp	/^  int threads_per_socket;$/;"	m	class:Graph
+transpose	core/graph.hpp	/^  void transpose() {$/;"	f	class:Graph
+tune_chunks	core/graph.hpp	/^  void tune_chunks() {$/;"	f	class:Graph
+tuned_chunks_dense	core/graph.hpp	/^  ThreadState ** tuned_chunks_dense; \/\/ ThreadState [partitions][threads];$/;"	m	class:Graph
+tuned_chunks_sparse	core/graph.hpp	/^  ThreadState ** tuned_chunks_sparse; \/\/ ThreadState [partitions][threads];$/;"	m	class:Graph
+unit_size	core/graph.hpp	/^  size_t unit_size;$/;"	m	class:Graph
+vertex	core/graph.hpp	/^  VertexId vertex;$/;"	m	struct:MsgUnit
+vertex	core/type.hpp	/^  VertexId vertex;$/;"	m	struct:CompressedAdjIndexUnit
+vertices	core/graph.hpp	/^  VertexId vertices;$/;"	m	class:Graph
+write_add	core/atomic.hpp	/^inline void write_add(T * ptr, T val) {$/;"	f
+write_min	core/atomic.hpp	/^inline bool write_min(T * ptr, T val) {$/;"	f
 ~Bitmap	core/bitmap.hpp	/^  ~Bitmap() {$/;"	f	class:Bitmap
 ~MPI_Instance	core/mpi.hpp	/^  ~MPI_Instance() {$/;"	f	class:MPI_Instance
